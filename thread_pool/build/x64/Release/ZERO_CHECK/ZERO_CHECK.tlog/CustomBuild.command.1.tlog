@@ -1,0 +1,10 @@
+^C:\USERS\GENTR_HC1I7IQ\IDEAPROJECTS\PROJECTS\NEW FOLDER\THREAD_POOL\BUILD\CMAKEFILES\F5E817DDF7599B5833140812C818A1EA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gentr_hc1i7iq/IdeaProjects/Projects/New folder/thread_pool" "-BC:/Users/gentr_hc1i7iq/IdeaProjects/Projects/New folder/thread_pool/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/gentr_hc1i7iq/IdeaProjects/Projects/New folder/thread_pool/build/thread_pool.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
